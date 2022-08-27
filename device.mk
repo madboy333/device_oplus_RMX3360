@@ -33,6 +33,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 # Overlays
 PRODUCT_PACKAGES += \
     OPlusFrameworksResTarget \
+    OPlusExtrasResTarget \
     OPlusSettingsProviderResTarget \
     OPlusSystemUIResTarget
 
