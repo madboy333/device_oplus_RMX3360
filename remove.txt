@@ -1,0 +1,5 @@
+device/oplus/RMX3360
+device/oplus/sm8350-common
+vendor/oplus
+hardware/oplus
+kernel/oplus
