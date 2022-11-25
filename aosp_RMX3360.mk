@@ -11,10 +11,24 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from RMX3360 device
 $(call inherit-product, device/oplus/RMX3360/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common aosp stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_RMX3360
+# PixelPlus Official Stuff
+IS_PHONE := true
+TARGET_SUPPORTS_QUICK_TAP := true
+CUSTOM_BUILD_TYPE := OFFICIAL
+TARGET_SUPPORTS_GOOGLE_RECORDER := false
+TARGET_INCLUDE_STOCK_ACORE := false
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+TARGET_FACE_UNLOCK_SUPPORTED := true
+EXTRA_UDFPS_ANIMATIONS := true
+PPUI_MAINTAINER := itsXRP
+
+#Bootanimation
+TARGET_BOOT_ANIMATION_RES := 1080
+
+PRODUCT_NAME := aosp_RMX3360
 PRODUCT_DEVICE := RMX3360
 PRODUCT_MANUFACTURER := realme
 PRODUCT_BRAND := realme
