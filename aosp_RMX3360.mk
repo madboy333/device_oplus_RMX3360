@@ -8,6 +8,9 @@ $(call inherit-product, device/oplus/RMX3360/device.mk)
 # Inherit some common Elixir Stuff
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
+#Inherit vendor/extra
+$(call inherit-product, vendor/extra/BoardConfigExtra.mk)
+
 # Official-ify
 ELIXIR_MAINTAINER := X-R-P
 ELIXIR_BUILD_TYPE := OFFICIAL
