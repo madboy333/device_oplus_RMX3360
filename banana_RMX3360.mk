@@ -5,25 +5,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from RMX3360 device
 $(call inherit-product, device/oplus/RMX3360/device.mk)
 
-# Inherit some common Elixir Stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common BananaDroid stuff
+$(call inherit-product, vendor/banana/config/common.mk)
 
-# Official-ify
-ELIXIR_MAINTAINER := X-R-P
-ELIXIR_BUILD_TYPE := OFFICIAL
-IS_PHONE := true
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_SUPPORTS_CALL_RECORDING := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := false
-TARGET_INCLUDE_STOCK_ACORE := false
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
-EXTRA_UDFPS_ANIMATIONS := true
+BANANA_MAINTAINER := MADBOY333
+TARGET_ENABLE_BLUR := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_HAS_UDFPS := true
+WITH_GAPPS := true
 
 #Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
 
-PRODUCT_NAME := aosp_RMX3360
+PRODUCT_NAME := banana_RMX3360
 PRODUCT_DEVICE := RMX3360
 PRODUCT_MANUFACTURER := realme
 PRODUCT_BRAND := realme

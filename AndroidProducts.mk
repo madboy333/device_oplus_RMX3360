@@ -1,7 +1,7 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_RMX3360.mk
+    $(LOCAL_DIR)/banana_RMX3360.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_RMX3360-user \
-    aosp_RMX3360-userdebug \
-    aosp_RMX3360-eng
+    banana_RMX3360-user \
+    banana_RMX3360-userdebug \
+    banana_RMX3360-eng
